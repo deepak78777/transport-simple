@@ -1,0 +1,12 @@
+<div *ngFor="let trip of trips" class="trip-row">
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Start" [(ngModel)]="trip.start" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="End" [(ngModel)]="trip.end" />
+  </mat-form-field>
+</div>
+
+<button mat-raised-button color="primary" (click)="addTrip()">+ Add Trip</button>
+<button mat-raised-button color="accent" (click)="onSubmit()">Visualize</button>

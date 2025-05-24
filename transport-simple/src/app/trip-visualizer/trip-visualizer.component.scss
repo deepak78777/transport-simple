@@ -1,0 +1,34 @@
+.trip-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.trip-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trip-line {
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(to right, #007bc6, #41007f);
+  position: relative;
+}
+
+.trip-line.arrow::after {
+  content: '➜';
+  position: absolute;
+  right: -15px;
+  font-size: 20px;
+  color: #888;
+}
+
+.trip-line.curve {
+  width: 50px;
+  height: 40px;
+  border: 2px solid orange;
+  border-radius: 30% 70% 30% 70% / 60% 40% 60% 40%;
+}

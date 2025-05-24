@@ -1,0 +1,6 @@
+<div class="trip-container">
+  <div *ngFor="let trip of visualTrips" class="trip-item">
+    <div [ngClass]="trip.type" class="trip-line"></div>
+    <div class="trip-label">{{ trip.label }}</div>
+  </div>
+</div>
